@@ -13,6 +13,10 @@ const baseConfig = {
     path: resolvePath("../dist"),
     filename: "[name].bundle.js",
   },
+  resolve: {
+    // Add '.ts' and '.tsx' as resolvable extensions.
+    extensions: [".ts", ".tsx", ".js", ".json"],
+  },
   module: {
     rules: [
       {
@@ -33,6 +37,10 @@ const baseConfig = {
       {
         test: /\.jsx$/,
         use: "babel-loader",
+      },
+      {
+        test: /\.tsx$/,
+        use: "ts-loader",
       },
       {
         test: /\.svg$/,
