@@ -1,7 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
-import Hello from './Hello.tsx';
-import './App.less';
+import React from 'react'
+import logo from './logo.svg'
+import Hello from './Hello.tsx'
+import './App.less'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Hello></Hello>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
